@@ -5,7 +5,7 @@
 AWK is not just a command; it's a language designed for pattern scanning and processing! 🖥️🔍
 If you love working with structured text, logs, or CSV files, AWK will be your best friend! 🛠️💡
 
-✨ Why AWK?
+# **✨ Why AWK?** #
 ✅ Process structured text with ease 📜
 ✅ Extract, filter, and format data like a pro 📊
 ✅ Automate reports, logs, and analytics effortlessly 🔄

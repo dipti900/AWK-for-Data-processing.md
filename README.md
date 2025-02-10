@@ -1,7 +1,7 @@
 # AWK-for-Data-processing.md
 
 
-🎯 AWK: The Text Manipulation Powerhouse! 🚀
+#🎯 AWK: The Text Manipulation Powerhouse! 🚀
 AWK is not just a command; it's a language designed for pattern scanning and processing! 🖥️🔍
 If you love working with structured text, logs, or CSV files, AWK will be your best friend! 🛠️💡
 

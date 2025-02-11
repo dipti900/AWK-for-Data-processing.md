@@ -23,28 +23,124 @@ AWK processes text line by line and operates on fields within each line. The def
 
 👉 action: Specifies what AWK should do with the matched text.
 
-
-## 🔥 Common AWK Examples ##
-
-**📌 Print Specific Columns **
-
-        awk '{print $1, $3}' file.txt
-        
-📝 Prints the first and third columns of each line in file.txt.
+## 🌟 AWK Command Basics ##
 
 
-📌 Filter Data Based on a Condition
 
-        awk '$3 > 50 {print $1, $2}' data.csv
-        
-🔍 Prints the first and second columns only if the third column is greater than 50.
+**📌 Table of Contents**
+
+Print Specific Columns
+
+Filter Rows Based on a Condition
+
+Using a Delimiter
+
+Print Line Numbers
+
+Count Number of Lines
+
+Find Sum of a Column
+
+Find Average of a Column
+
+Replace a Word in a File
+
+Print Only Matching Lines
+
+Execute Commands on Matching Lines
 
 
-📌 Use a Custom Delimiter (CSV Processing)
+1️⃣ Print Specific Columns
 
-       awk -F "," '{print $1, $2}' data.csv
-       
-📌 Sets comma (,) as the field separator and prints the first two columns of a CSV file.
+
+       awk '{print $1, $3}' file.txt
+
+
+✨ Prints the 1st and 3rd columns from file.txt.
+
+
+2️⃣ Filter Rows Based on a Condition
+
+
+       awk '$3 > 50' file.txt
+
+
+✅ Prints rows where the 3rd column is greater than 50.
+
+
+3️⃣ Using a Delimiter (CSV Files)
+
+
+      awk -F, '{print $1, $2}' file.csv
+
+
+📌 Specifies a comma (,) as the delimiter and prints the 1st and 2nd columns.
+
+
+4️⃣ Print Line Numbers
+
+
+      awk '{print NR, $0}' file.txt
+
+
+📄 Prints each line with its line number (NR).
+
+
+5️⃣ Count Number of Lines
+
+
+      awk 'END {print NR}' file.txt
+
+
+🔢 Prints the total number of lines in the file.
+
+
+6️⃣ Find Sum of a Column
+
+
+      awk '{sum += $2} END {print sum}' file.txt
+
+
+➕ Computes the sum of the 2nd column.
+
+
+7️⃣ Find Average of a Column
+
+
+     awk '{sum += $2; count++} END {print sum/count}' file.txt
+
+
+📊 Computes the average of the 2nd column.
+
+
+8️⃣ Replace a Word in a File
+
+
+    awk '{gsub(/old/, "new"); print}' file.txt
+
+
+🔄 Replaces occurrences of "old" with "new".
+
+
+9️⃣ Print Only Matching Lines
+
+
+    awk '/pattern/' file.txt
+
+
+🔍 Prints lines that contain "pattern".
+
+
+🔟 Execute Commands on Matching Lines
+
+
+     awk '/error/ {print $0 > "errors.log"}' file.txt
+
+
+🚨 Redirects lines containing "error" to errors.log.
+
+
+
 
 
 ## 🎯 Why Use AWK? ##

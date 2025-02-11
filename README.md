@@ -35,6 +35,7 @@ awk 'pattern { action }' file.txt
         
 🔍 Prints the first and second columns only if the third column is greater than 50.
 
+
 📌 Use a Custom Delimiter (CSV Processing)
 
        awk -F "," '{print $1, $2}' data.csv
@@ -74,7 +75,8 @@ awk 'pattern { action }' file.txt
 ✔️ Formats output in a structured way.
 
 
-🌟 Conclusion
+## 🌟 Conclusion ##
+
 AWK is an essential tool for text processing, data manipulation, and automation. It’s widely used by system administrators, data analysts, and developers.
 
 

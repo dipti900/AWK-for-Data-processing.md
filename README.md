@@ -29,28 +29,28 @@ AWK processes text line by line and operates on fields within each line. The def
 
 **📌 Table of Contents**
 
-  Print Specific Columns
+       Print Specific Columns
 
-  Filter Rows Based on a Condition
+       Filter Rows Based on a Condition
 
-  Using a Delimiter
+       Using a Delimiter
 
-  Print Line Numbers
+       Print Line Numbers
 
-  Count Number of Lines
+       Count Number of Lines
 
-  Find Sum of a Column
+       Find Sum of a Column
 
-  Find Average of a Column
+       Find Average of a Column
 
-  Replace a Word in a File
+       Replace a Word in a File
 
-  Print Only Matching Lines
+       Print Only Matching Lines
 
-  Execute Commands on Matching Lines
+        Execute Commands on Matching Lines
 
 
-1️⃣  Print Specific Columns
+1️⃣    Print Specific Columns
 
 
        awk '{print $1, $3}' file.txt
@@ -59,7 +59,7 @@ AWK processes text line by line and operates on fields within each line. The def
 ✨ Prints the 1st and 3rd columns from file.txt.
 
 
-2️⃣  Filter Rows Based on a Condition
+2️⃣    Filter Rows Based on a Condition
 
 
        awk '$3 > 50' file.txt
@@ -68,7 +68,7 @@ AWK processes text line by line and operates on fields within each line. The def
 ✅ Prints rows where the 3rd column is greater than 50.
 
 
-3️⃣  Using a Delimiter (CSV Files)
+3️⃣    Using a Delimiter (CSV Files)
 
 
       awk -F, '{print $1, $2}' file.csv
@@ -77,7 +77,7 @@ AWK processes text line by line and operates on fields within each line. The def
 📌 Specifies a comma (,) as the delimiter and prints the 1st and 2nd columns.
 
 
-4️⃣  Print Line Numbers
+4️⃣    Print Line Numbers
 
 
       awk '{print NR, $0}' file.txt
@@ -86,7 +86,7 @@ AWK processes text line by line and operates on fields within each line. The def
 📄 Prints each line with its line number (NR).
 
 
-5️⃣  Count Number of Lines
+5️⃣    Count Number of Lines
 
 
       awk 'END {print NR}' file.txt
@@ -95,7 +95,7 @@ AWK processes text line by line and operates on fields within each line. The def
 🔢 Prints the total number of lines in the file.
 
 
-6️⃣  Find Sum of a Column
+6️⃣    Find Sum of a Column
 
 
       awk '{sum += $2} END {print sum}' file.txt
@@ -104,7 +104,7 @@ AWK processes text line by line and operates on fields within each line. The def
 ➕ Computes the sum of the 2nd column.
 
 
-7️⃣  Find Average of a Column
+7️⃣    Find Average of a Column
 
 
      awk '{sum += $2; count++} END {print sum/count}' file.txt
@@ -113,7 +113,7 @@ AWK processes text line by line and operates on fields within each line. The def
 📊 Computes the average of the 2nd column.
 
 
-8️⃣  Replace a Word in a File
+8️⃣    Replace a Word in a File
 
 
     awk '{gsub(/old/, "new"); print}' file.txt
@@ -122,7 +122,7 @@ AWK processes text line by line and operates on fields within each line. The def
 🔄 Replaces occurrences of "old" with "new".
 
 
-9️⃣  Print Only Matching Lines
+9️⃣    Print Only Matching Lines
 
 
     awk '/pattern/' file.txt
@@ -131,7 +131,7 @@ AWK processes text line by line and operates on fields within each line. The def
 🔍 Prints lines that contain "pattern".
 
 
-🔟  Execute Commands on Matching Lines
+🔟    Execute Commands on Matching Lines
 
 
      awk '/error/ {print $0 > "errors.log"}' file.txt

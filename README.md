@@ -26,30 +26,6 @@ AWK processes text line by line and operates on fields within each line. The def
 ## 🌟 AWK Command Basics ##
 
 
-
-**📌 Table of Contents**
-
-       Print Specific Columns
-
-       Filter Rows Based on a Condition
-
-       Using a Delimiter
-
-       Print Line Numbers
-
-       Count Number of Lines
-
-       Find Sum of a Column
-
-       Find Average of a Column
-
-       Replace a Word in a File
-
-       Print Only Matching Lines
-
-        Execute Commands on Matching Lines
-
-
 1️⃣    Print Specific Columns
 
 

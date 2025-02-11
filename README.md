@@ -16,27 +16,23 @@ AWK is a programming language designed for text processing and is used mainly in
 ## **🚀 Getting Started with AWK
 AWK processes text line by line and operates on fields within each line. The default delimiter is whitespace, but you can specify custom delimiters.
 
-Basic Syntax:
-bash
-Copy
-Edit
 awk 'pattern { action }' file.txt
 👉 pattern: Defines when the action should execute.
 👉 action: Specifies what AWK should do with the matched text.
 
-🔥 Common AWK Examples
-📌 Print Specific Columns
-bash
-Copy
-Edit
-awk '{print $1, $3}' file.txt
+## 🔥 Common AWK Examples ##
+
+**📌 Print Specific Columns **
+
+        awk '{print $1, $3}' file.txt
+        
 📝 Prints the first and third columns of each line in file.txt.
 
+
 📌 Filter Data Based on a Condition
-bash
-Copy
-Edit
-awk '$3 > 50 {print $1, $2}' data.csv
+
+        awk '$3 > 50 {print $1, $2}' data.csv
+        
 🔍 Prints the first and second columns only if the third column is greater than 50.
 
 📌 Use a Custom Delimiter (CSV Processing)

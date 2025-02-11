@@ -13,7 +13,7 @@ AWK is a programming language designed for text processing and is used mainly in
 
 ✔️ Generate reports automatically 📜
 
-## **🚀 Getting Started with AWK
+## 🚀 Getting Started with AWK
 AWK processes text line by line and operates on fields within each line. The default delimiter is whitespace, but you can specify custom delimiters.
 
 awk 'pattern { action }' file.txt
@@ -36,46 +36,48 @@ awk 'pattern { action }' file.txt
 🔍 Prints the first and second columns only if the third column is greater than 50.
 
 📌 Use a Custom Delimiter (CSV Processing)
-bash
-Copy
-Edit
-awk -F "," '{print $1, $2}' data.csv
+
+       awk -F "," '{print $1, $2}' data.csv
+       
 📌 Sets comma (,) as the field separator and prints the first two columns of a CSV file.
 
-🎯 Why Use AWK?
+
+## 🎯 Why Use AWK? ##
+
 ✅ Lightweight and built-in on most Linux/Unix systems
+
 ✅ Powerful for data extraction and formatting
+
 ✅ Ideal for log file analysis, reports, and data transformation
 
-📚 Advanced AWK Features
+
+## 📚 Advanced AWK Features ##
 🔥 Using Variables:
 
-bash
-Copy
-Edit
-awk '{ sum += $3 } END { print "Total:", sum }' data.txt
+       awk '{ sum += $3 } END { print "Total:", sum }' data.txt
+       
 ✔️ Computes the sum of the third column in data.txt.
+
 
 🔥 Using Regular Expressions:
 
-bash
-Copy
-Edit
-awk '/error/ {print $0}' logfile.txt
+
+        awk '/error/ {print $0}' logfile.txt
+        
 ✔️ Prints lines containing the word "error" in a log file.
+
 
 🔥 Formatted Output:
 
-bash
-Copy
-Edit
-awk '{printf "User: %s, Age: %d\n", $1, $2}' users.txt
+        awk '{printf "User: %s, Age: %d\n", $1, $2}' users.txt
+        
 ✔️ Formats output in a structured way.
+
 
 🌟 Conclusion
 AWK is an essential tool for text processing, data manipulation, and automation. It’s widely used by system administrators, data analysts, and developers.
 
-📌 Master AWK and unlock the full potential of your command-line workflows! 🚀
+
 
 
 

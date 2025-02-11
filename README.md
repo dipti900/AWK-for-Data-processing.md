@@ -16,9 +16,13 @@ AWK is a programming language designed for text processing and is used mainly in
 ## 🚀 Getting Started with AWK
 AWK processes text line by line and operates on fields within each line. The default delimiter is whitespace, but you can specify custom delimiters.
 
+
 awk 'pattern { action }' file.txt
+
 👉 pattern: Defines when the action should execute.
+
 👉 action: Specifies what AWK should do with the matched text.
+
 
 ## 🔥 Common AWK Examples ##
 
